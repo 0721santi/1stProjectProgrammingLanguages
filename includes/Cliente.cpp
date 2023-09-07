@@ -6,6 +6,10 @@ Cliente::Cliente(string telefonoContacto, string direccionContacto, string nombr
     this->telefonoContacto = telefonoContacto;
     this->direccionContacto = direccionContacto;
 }
+Cliente::Cliente(string telefonoContacto, string direccionContacto){
+    this->direccionContacto = direccionContacto;
+    this->telefonoContacto = telefonoContacto;
+}
 
 void Cliente::consultarProductos(){
     mostrarContenido();

@@ -12,18 +12,25 @@ UserDef::UserDef(string nombre, string email, int perfil){
     this->perfil = perfil;
 }
 
-UserDef::mostrarContenido(){
-    switch (this->perfil)
-    {
-    case 2:
-        cout << "Hola, soy " << this->nombre << ", mi email es: " << this->email << " y soy un cajero." << endl;
-        break;
-    case 3:
-        cout << "Hola, soy " << this->nombre << ", mi email es: " << this->email << " y soy un cliente." << endl;
-        break;
-    default:
-        cout << "Hola, soy " << this->nombre << " y mi email es: " << this->email << "." << endl;
-        break;
-    }
-    
+void UserDef::mostrarContenido(){
+    cout << "Hola, soy " << this->nombre << " y mi email es: " << this->email << "." << endl;
+}
+
+void UserDef::setNombre(string nombre){
+    this->nombre = nombre;
+}
+void UserDef::setMail(string email){
+    this->email = email;
+}
+void UserDef::setPerfil(int perfil){
+    this->perfil = perfil;
+}
+string UserDef::getNombre(){
+    return this->nombre;
+}
+string UserDef::getMail(){
+    return this->email;
+}
+int UserDef::getPerfil(){
+    return this->perfil;
 }
