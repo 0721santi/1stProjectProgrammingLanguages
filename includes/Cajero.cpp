@@ -3,9 +3,6 @@
 
 using namespace std;
 
-Cajero::Cajero(string claveCajero){
-    this->claveCajero = claveCajero;
-}
 Cajero::Cajero(string claveCajero, string nombre, string email) : UserDef(nombre, email, 2){
     this->claveCajero = claveCajero;
 }
@@ -15,6 +12,7 @@ void Cajero::registrarVenta(){
     cout << "Estoy registrando una venta." << endl;
 }
 
-void UserDef::mostrarContenido(){
-    cout << "Hola, soy " << this->nombre << ", mi email es: " << this->email << " y soy un cliente." << endl;
+void Cajero::mostrarContenido(){
+    cout << "Hola, soy " << this->getNombre() << ", mi email es: " << this->getMail() << " y soy un cajero." << endl;
+    cout << "Mi clave personal es: " << this->claveCajero << endl;
 }

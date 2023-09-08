@@ -6,16 +6,13 @@ Cliente::Cliente(string telefonoContacto, string direccionContacto, string nombr
     this->telefonoContacto = telefonoContacto;
     this->direccionContacto = direccionContacto;
 }
-Cliente::Cliente(string telefonoContacto, string direccionContacto){
-    this->direccionContacto = direccionContacto;
-    this->telefonoContacto = telefonoContacto;
-}
 
 void Cliente::consultarProductos(){
     mostrarContenido();
     cout << "Estoy viendo los productos." << endl;
 }
 
-void UserDef::mostrarContenido(){
-    cout << "Hola, soy " << this->nombre << ", mi email es: " << this->email << " y soy un cliente." << endl;
+void Cliente::mostrarContenido(){
+    cout << "Hola, soy " << this->getNombre() << ", mi email es: " << this->getMail() << " y soy un cliente." << endl;
+    cout << "Mi telefono de contacto es: " << this->telefonoContacto << " y mi direccion es: " << this->direccionContacto << "." << endl;
 }

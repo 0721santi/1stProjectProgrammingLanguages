@@ -4,16 +4,21 @@
 #include "Cajero.h"
 #include "Cliente.h"
 #include <string>
+#include <vector>
 
 class Admin : public UserDef {
 private:
     std::string claveAdmin;
+    std::vector<Cajero> cajeros;
+    std::vector<Cliente> clientes;
 public:
-    Admin(std::string claveAdmin);
     Admin(std::string claveAdmin, std::string nombre, std::string email);
 
     Cliente crearNuevoCliente();
     Cajero crearNuevoCajero();
+    void mostrarPersonal();
+    void mostrarClientes();
+    void mostrarContenido();
 };
 
 #endif
