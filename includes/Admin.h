@@ -14,8 +14,10 @@ private:
 public:
     Admin(std::string claveAdmin, std::string nombre, std::string email);
 
-    Cliente crearNuevoCliente();
-    Cajero crearNuevoCajero();
+    Cliente crearNuevoClienteMan();
+    Cajero crearNuevoCajeroMan();
+    Cliente crearNuevoClienteAuto();
+    Cajero crearNuevoCajeroAuto();
     void mostrarPersonal();
     void mostrarClientes();
     void mostrarContenido();
