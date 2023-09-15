@@ -3,11 +3,13 @@
 using namespace std;
 
 int main(){
+    cout << "Se creara un administrador." << endl;
     string clave, nombre, email;
-    cout << "Ingrese nombre: "; cin >> nombre;
-    cout << "Ingrese email: "; cin >> email;
-    cout << "Ingrese clave: "; cin >> clave;
-    Admin jefe("abc", "cde", "fgh");
+    cout << "Ingrese nombre: "; getline(cin, nombre);
+    cout << "Ingrese email: "; getline(cin, email);
+    cout << "Ingrese clave: "; getline(cin, clave);
+    Admin jefe(clave, nombre, email);
+    cout << "Se ha creado un nuevo administrador: "; jefe.mostrarContenido();
     while(true){
         cout << "MENU" << endl;
         cout << "1. Crear un cajero manualmente." << endl;
@@ -19,7 +21,8 @@ int main(){
         cout << "7. Mostrar cajeros." << endl;
         cout << "8. Salir." << endl;
         int opc; 
-        cout << "Selecciones una opción: "; cin >> opc;
+        cout << "Seleccione una opcion: ";
+        cin >> opc;
         switch (opc){
         case 1:
             jefe.crearNuevoCajeroMan();
