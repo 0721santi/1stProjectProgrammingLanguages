@@ -31,5 +31,7 @@ Para ejecutar el proyecto, siga los siguientes pasos.
 
 ## Contacto
 
-Si tiene alguna pregunta o consulta, póngase en contacto con [dirección de correo electrónico]<a href="mailto:mhong@eafit.edu.co">
+Si tiene alguna pregunta o consulta, póngase en contacto con [dirección de correo electrónico]
+</a> <a href="mailto:mhong@eafit.edu.co">
+</a> <a href="mailto:sidarragac@eafit.edu.co">
 
