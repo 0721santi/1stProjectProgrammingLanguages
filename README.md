@@ -1,4 +1,4 @@
-# 1stProjectProgrammingLanguages
+# 1stProject - ProgrammingLanguages
 
 Este proyecto es un programa C++ basado en el paradigma de la programación orientada a objetos, que busca gestionar la información de Cajeros y Clientes de una empresa.
 
