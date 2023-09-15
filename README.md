@@ -29,5 +29,5 @@ Para ejecutar el proyecto, siga los siguientes pasos.
 ## Contacto
 
 Si tiene alguna pregunta o consulta, póngase en contacto con
-Minhyuk Hong: mhong@eafit.edu.co
-Santiago Idarraga: sidarragac@eafit.edu.co
+- Minhyuk Hong: mhong@eafit.edu.co
+- Santiago Idarraga: sidarragac@eafit.edu.co
