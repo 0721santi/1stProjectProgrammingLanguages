@@ -6,7 +6,7 @@
 // #include <random>
 
 using namespace std;
-//Se crean funciones propias del archivo cpp para creación automática de datos:
+//Se crean funciones propias del archivo cpp para creación automática de datos
 string creaNombre(){
     srand(time(NULL));
     vector<string> nombres = {"Santiago", "Juan", "Andres", "Edison", "Oscar", "Eduardo", "Felipe", "Samuel", "Mateo", "Sofia","Salome","Andrea","Susana","Juliana","Maria","Nelly","Anderson","Jesus", "Jose", "Bernardo","Daniel", "Miguel", "Edwin", "Diego", "Cecilia", "Roberto", "Carolina", "Franciso", "Leidy", "Mauicio", "Jacobo", "Leon", "Alejandra", "Catalina", "Nidia", "Cristiano"};
@@ -99,13 +99,15 @@ Cliente Admin::crearNuevoClienteAuto(){
 void Admin::mostrarPersonal(){
     cout << "Este es el personal activo actualmente:" << endl;
     for(Cajero cajero : this->cajeros){
-        cajero.mostrarContenido();
+        cajero.registrarVenta();
+        cout << endl;
     }
 }
 void Admin::mostrarClientes(){
     cout << "Estas son las personas registradas:" << endl;
     for(Cliente cliente : this->clientes){
-        cliente.mostrarContenido();
+        cliente.consultarProductos();
+        cout << endl;
     }
 }
 

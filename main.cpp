@@ -17,8 +17,8 @@ int main(){
         cout << "3. Crear un cliente manualmente." << endl;
         cout << "4. Crear un cliente automaticamente." << endl;
         cout << "5. Mostrar info del administrador. " << endl;
-        cout << "6. Mostrar clientes." << endl;
-        cout << "7. Mostrar cajeros." << endl;
+        cout << "6. Mostrar cajeros." << endl;
+        cout << "7. Mostrar clientes." << endl;
         cout << "8. Salir." << endl;
         int opc; 
         cout << "Seleccione una opcion: ";
@@ -40,10 +40,10 @@ int main(){
             jefe.mostrarContenido();
             break;
         case 6:
-            jefe.mostrarClientes();
+            jefe.mostrarPersonal();
             break;
         case 7:
-            jefe.mostrarPersonal();
+            jefe.mostrarClientes();
             break;
         default:
             cout << "Gracias por usar el programa." << endl;
